@@ -28,7 +28,6 @@
     <script type="text/javascript">
       (function () {
         emailjs.init("user_3bq7G1fB27mG94EvyJnZD");
-        emailjs.send("gmail", "rosie", {name: "Jose", notes: "The project that I want is..."});
       })();
     </script>
   </head>
@@ -101,7 +100,7 @@
           <h5 class="uppercase text-center">Let's work together</h5>
         </div>
         <div class="center-form">
-          <form>
+          <form onsubmit="return sendMail(this);">
             <input
               type="text"
               name="name"
@@ -176,5 +175,6 @@
         </div>
       </div>
     </footer>
+    <script src="assets/js/sendMail.js"></script>
   </body>
 </html>
